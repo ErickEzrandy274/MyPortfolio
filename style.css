@@ -1,0 +1,262 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+   /*navigasi dapat menempel pada seluruh halaman*/
+   display: inline;
+   width: 100%;
+}
+
+#welcome-section {
+    background: url("./image/bg.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    color: black;
+    width: 100%;
+}
+
+#welcome-section h1 {
+    font-size: 60px;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    letter-spacing: 5px;
+    animation: text 6s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.text1 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+@keyframes text {
+    0% {
+        color: transparent;
+        margin-bottom: -60px;
+    }
+
+    35% {
+        color: #f1f6f949;
+        letter-spacing: 30px;
+        margin-bottom: -60px;
+        text-shadow: 0 0 20px #04b5eb;
+    }
+
+    70% {
+        letter-spacing: 5px;
+        text-shadow: 0 0 40px #04b5eb;
+    }
+
+    90% {text-shadow: 2px 2px 1px #04b5eb;}
+}
+
+/* 
+KETIKA z-index: 1; DIHAPUS MAKA KETIKA SCROLL HALAMAN WEB BAGIAN custom-shape-divider-bottom- 
+AKAN BERADA DI ATAS NAVBAR ANDA !!! 
+
+SELAIN ITU, JIKA NILAI z-index: 2; MAKA KETIKA SCROLL KE BAGIAN PROJECT 
+TAMPILAN SPAN TETAP BERADA DI ATAS NAV SEHINGGA NILAI z-index: 3; !!!
+*/
+nav {background-color: black; z-index: 3;}
+nav a img {border-radius: 50%;}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.1);
+}
+
+.navbar-brand, #navbarNav ul li a {color: whitesmoke;}
+#navbarNav ul li a:hover {color: #D44000}
+.description {font-size: 1.3rem;}
+
+#about {
+    background: linear-gradient(180deg,black,#000033,#0066CC,#0099FF,#5FC9F3);
+    min-height: 60vh;
+    color: whitesmoke;
+}
+
+#projects {background: linear-gradient(180deg,#005A8D,#03256C,black); padding: 20px 0;}
+
+.custom-shape-divider-bottom-1626251764 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1626251764 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1626251764 .shape-fill {
+    fill: #005A8D;
+}
+
+.project-tile {
+    color: red;
+    text-shadow: 1px 1px 0.5px #3EDBF0;
+}
+
+span.angle.carousel-control-next-icon, span.angle.carousel-control-prev-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+span.angle.carousel-control-next-icon:hover, span.angle.carousel-control-prev-icon:hover {
+    box-shadow: 0 0 10px 7px #88FFF7;
+    transition: 0.5s ease-in-out;
+    left: 5px;
+}
+
+span.angle.carousel-control-prev-icon:hover {left: -5px;}
+.title {text-shadow: 1.8px 1.8px 0.8px #3EDBF0;}
+#projects h1 , footer h3 {color: whitesmoke; text-shadow: 1.8px 1.8px 1px black;}
+
+.project-button {color: whitesmoke; text-shadow: 1px 1px 0.8px black;}
+.project-button:hover {color: black; text-shadow: 1px 1px 0.8px whitesmoke;}
+
+.custom-shape-divider-bottom-1626333380 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1626333380 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 294px;
+}
+
+.custom-shape-divider-bottom-1626333380 .shape-fill {
+    fill: #5C3030;
+}
+
+.custom-shape-divider-top-1626333572 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1626333572 svg {
+    position: relative;
+    display: block;
+    width: calc(101% + 1.3px);
+    height: 390px;
+}
+
+.custom-shape-divider-top-1626333572 .shape-fill {
+    fill: linear-gradient(180deg,black,#000033,#0066CC,#0099FF,#5FC9F3);
+}
+
+#inner-contact {padding: 3rem 0 0;}
+#contact {padding: 20px 0;}
+#contact-title {font-size: 5rem;}
+
+footer {background: linear-gradient(180deg,#5C3030,#402A23);}
+
+@media (max-width: 992px) {
+    #welcome-section h1 {
+        font-size: 50px;
+    }
+    
+    @keyframes text {
+        0% {
+            color: transparent;
+            margin-bottom: -60px;
+        }
+    
+        30% {
+            color: #f1f6f949;
+            letter-spacing: 20px;
+            margin-bottom: -60px;
+            text-shadow: 0 0 20px #04b5eb;
+        }
+    
+        70% {
+            letter-spacing: 5px;
+            text-shadow: 0 0 40px #04b5eb;
+        }
+    
+        90% {text-shadow: 2px 2px 1px #04b5eb;}
+    }
+
+    #contact-title {font-size: 3.5rem;}
+
+    .custom-shape-divider-bottom-1626251764 svg {
+        width: calc(100% + 1.3px);
+        height: 236px;
+    }
+}
+
+@media (max-width: 768px) {
+    #welcome-section h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    #welcome-section h1 {
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
+
+    #contact-title {font-size: 2.5rem;}
+
+    @keyframes text {
+        0% {
+            color: transparent;
+            margin-bottom: -30px;
+        }
+    
+        30% {
+            color: #f1f6f949;
+            letter-spacing: 7px;
+            margin-bottom: -30px;
+            text-shadow: 0 0 20px #04b5eb;
+        }
+    
+        70% {
+            letter-spacing: 5px;
+            text-shadow: 0 0 40px #04b5eb;
+        }
+    
+        90% {text-shadow: 2px 2px 1px #04b5eb;}
+    }
+
+    span.angle.carousel-control-next-icon, span.angle.carousel-control-prev-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    span.angle.carousel-control-next-icon:hover, span.angle.carousel-control-prev-icon:hover {
+        box-shadow: 0 0 10px 5px #88FFF7;
+    }
+    
+}
