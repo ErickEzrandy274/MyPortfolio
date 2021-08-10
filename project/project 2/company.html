@@ -4,243 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Product Landing Page</title>
-    <link href="https://cdn4.iconfinder.com/data/icons/flat-rounded-seo-icons/80/landing-page-512.png"
-        rel="shortcut icon">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://cdn4.iconfinder.com/data/icons/flat-rounded-seo-icons/80/landing-page-512.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
 </head>
-<body>
-    <header id="header">
-        <nav id="nav-bar">
-            <div class="logo">
-                <img id="header-img" src="https://rog.asus.com/dist/img/rog-logo@3x.png"/>
-            </div>
-
-            <ul>
-                <li><a class="nav-link" href="#review">Review</a></li>
-                <li><a class="nav-link" href="#performance">Performance</a></li>
-                <li><a class="nav-link" href="#audio">Audio</a></li>
-                <li><a class="nav-link" href="#battery">Battery</a></li>
-                <li><a class="nav-link" href="#more">More Info</a></li>
-            </ul>
-
-            <div class="menu-toggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
+<body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <header class="d-inline">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a href="#" class="navbar-brand fs-3 mx-0"><img src="https://rog.asus.com/dist/img/rog-logo@3x.png" 
+                    alt="logo ROG" class="img-fluid w-100"></a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 px-3 active" href="#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 px-3" href="#performance">Performance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 px-3" href="#audio">Audio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 px-3" href="#battery">Battery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 px-3" href="#more">More Info</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <section id="review">
-        <div id="text-review">
-            <h2>VIDEO REVIEW</h2>
-        </div>
-
-        <div id="video-frame">
-            <iframe id="video" width="450" height="300" src="https://www.youtube.com/embed/QDnnh13h2go" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        
-            <iframe id="video" width="450" height="300" src="https://www.youtube.com/embed/ZHqU-cHqEOE" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        
-            <iframe id="video" width="450" height="300" src="https://www.youtube.com/embed/UcfT8uuxKuU" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </section>
-
     <main>
-        <div id="performance">
-            <div class="frame">
-                <div class="title perform-title"><h3 class="inner-title">PERFORMANCE</h3></div>
-               
-
-                <div class="brief-description">
-                    <h2 class="brief-text">GAMING GREATNESS</h2>
+        <div class="container-fluid p-0">
+            <section id="review" class="d-flex flex-column">
+                <div id="text-review" class="text-center mt-5">
+                    <h2 class="my-4 py-3">VIDEO REVIEW</h2>
                 </div>
-
-                <div class="full-description">
-                    <p>Prosesor terbaru yang hadir dengan performa luar biasa untuk bermain game, multitasking, dan banyak lagi. Kartu grafis
-                    NVIDIA hingga GeForce RTX™ 3070 GPU menghadirkan kecepatan frame yang mulus. Prosesor hingga AMD Ryzen™ 9 5900HX CPU
-                    yang dapat di-overclock memberi daya melalui pengangkatan yang berat. Dipersenjatai dengan RAM DDR4-3200 berkinerja
-                    tinggi hingga 16 GB, Anda dapat bermain game, streaming, dan berpindah aplikasi dengan mulus. Penyimpanan NVMe SSD
-                    hingga 1TB mempercepat waktu muat untuk game dan aplikasi, dan slot M.2 kedua memungkinkan Anda menambahkan drive lain
-                    untuk memperluas penyimpanan Anda.</p>
+            
+                <div id="video-frame" class="d-flex flex-column flex-lg-row">
+                    <iframe class="video mx-auto" height="300" src="https://www.youtube.com/embed/QDnnh13h2go" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            
+                    <iframe class="video mx-auto" height="300" src="https://www.youtube.com/embed/ZHqU-cHqEOE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            
+                    <iframe class="video mx-auto" height="300" src="https://www.youtube.com/embed/UcfT8uuxKuU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
+            </section>
 
-                <div class="window-box">
-                    <h2 id="window-text">Windows 10 Home</h2>
-                    <div id="os-text">OS</div>
-                </div>
-
-                <div class="circle-frame">
-                    <div class="circle-box">
-                        <div class="subtitle">NVDIA<sup>®</sup> GeForce</div>
-                        <div class="circle box-one">
-                            <div class="text-top">RTX™</div>
-                            <div class="text-bottom">3070</div>
-                        </div>
-                        <div class="main-text">GPU</div>
+            <div id="performance">
+                <div class="frame d-flex flex-column align-items-center justify-content-center p-4">
+                    <div class="title">
+                        <h2 class="inner-title px-3 pt-2">PERFORMANCE</h2>
                     </div>
-                
-                    <div class="circle-box">
-                        <div class="subtitle">AMD</div>
-                        <div class="circle">
-                            <div class="text-top">Ryzen™ 9</div>
-                            <div class="text-bottom">5900HX</div>
-                        </div>
-                        <div class="main-text">CPU</div>
-                    </div>
-
-                    <div class="circle-box">
-                        <div class="subtitle empty"></div>
-                        <div class="circle one">
-                            <div class="text-top text-top-three">UP TO</div>
-                            <div class="text-bottom text-bottom-three">32 GB</div>
-                        </div>
-                        <div class="main-text three">Memory</div>
-                    </div>
-
-                    <div class="circle-box">
-                        <div class="subtitle empty"></div>
-                        <div class="circle one">
-                            <div class="text-top text-top-four">UP TO</div>
-                            <div class="text-bottom text-bottom-four">1 TB</div>
-                        </div>
-                        <div class="main-text four">SSD</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="audio">
-            <div class="frame">
-                <div class="title box-audio"><h3 class="inner-title">AUDIO</h3></div>
-                
-                <div class="brief-description">
-                    <h2 class="brief-text">IMMERSE IN CRYSTAL CLEAR SOUND</h2>
-                </div>
-                
-                <div class="full-description">
-                    <p>Speaker Twin Smart Amp * mengeluarkan suara langsung ke arah Anda untuk memaksimalkan kejernihan. Gunakan headphone
-                    untuk menikmati suara surround 5.1 virtual channel yang didukung oleh Dolby Atmos. AI Noise-Cancelation dua arah
-                    menghilangkan kebisingan yang tidak diinginkan dari audio masuk dan keluar, membuat obrolan tim, streaming, dan
-                    komunikasi Anda lebih jernih.</p>
-                </div>
-
-                <div class="circle-frame">
-                    <div class="circle-box">
-                        <div class="circle">
-                            <div class="text-top">UP TO</div>
-                            <div class="text-bottom">2.8X</div>
-                        </div>
-                        <div class="main-text">MORE VOLUME</div>
-                    </div>
-
-                    <div class="circle-box">
-                        <div class="circle five">
-                            <div class="text-top">UP TO</div>
-                            <div class="text-bottom">3X</div>
-                        </div>
-                        <div class="main-text">MORE POWERFUL BASS</div>
-                    </div>
-                    
-                    <div class="circle-box">
-                        <div class="subtitle"></div>
-                        <div class="circle six">
-                            <div class="text-bottom text-bottom-six">6.5dBa</div>
-                        </div>
-                        <div class="main-text">DYNAMIC RANGE</div>
-                    </div>
-                </div>
-
-                <div class="bottom-text">
-                    <font class="small-size">*Smart Amp is available in configurations with NVIDIA® GeForce RTX™ graphics.</font>
-                </div>
-            </div>
-        </div>
-
-        <div id="battery">
-            <div class="frame">
-                <div class="title box-battery"><h3 class="inner-title">BATTERY</h3></div>
-                
-                <div class="brief-description">
-                    <h2 class="brief-text">LIVE LONGER</h2>
-                </div>
-                
-                <div class="full-description">
-                    <p>Cabut dan lakukan lebih banyak aktifitas saat bepergian dengan baterai berkapasitas tinggi 90Wh. Perpanjang masa pakai
-                    baterai Anda jauh dari soket yang biasanya dengan pengisian daya Tipe-C dari unit daya yang sudah kompatibel. Untuk
-                    aktivitas sehari-hari seperti penelusuran web dan streaming video, Anda dapat menggunakan adaptor USB-C yang lebih kecil
-                    hingga 100W dan bepergian lebih ringan dengan satu pengisi daya untuk laptop dan ponsel Anda.</p>
-                </div>
-
-                <div class="circle-frame">
-                    <div class="circle-box">
-                        <div class="circle seven">
-                            <div class="text-top text-top-five">90Wh</div>
-                        </div>
-                        <div class="main-text">BATTERY</div>
-                    </div>
-                
-                    <div class="circle-box">
-                        <div class="circle eight">
-                            <div class="text-top text-top-seven">Rapid</div>
-                            <div class="text-bottom text-bottom-seven">Type-C</div>
-                        </div>
-                        <div class="main-text">CHARGING</div>
-                    </div>
-
-                    <div class="circle-box">
-                        <div class="subtitle"></div>
-                        <div class="circle nine">
-                            <div class="text-top text-top-eigth">UP TO</div>
-                            <div class="text-bottom text-bottom-eigth">12 Hr</div>
-                        </div>
-                        <div class="main-text">VIDEO PLAYBACK</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="more">
-            <div class="frame" id="more-frame">
-                <div class="title box-more"><h3 class="inner-title">MORE INFO</h3></div>
-                <div>
+            
                     <div>
-                        <h2>Interested in an ASUS ROG Strix G15 G513 ?</h2>
-                        <h3 id="footer-title">Please fill out this short form so we can provide more information
-                        about ASUS ROG Strix G15 G513</h3>
+                        <h1 class="brief-text mb-4 p-3 fst-italic text-center">GAMING GREATNESS</h1>
                     </div>
-                    <form id="form" action="https://www.freecodecamp.com/email-submit">
-                        <div class="general">
-                            <label id="name-label" for="name">Full Name<span id="arterisk">*</span></label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required />
-                        </div>
-                
-                        <div class="general">
-                            <label id="email-label" for="email">Email<span id="arterisk">*</span></label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address"
-                                required />
-                        </div>
-                
-                        <input id="submit" type="submit" value="SUBMIT"></input>
-                    </form>
+            
+                    <div class="full-description w-50 text-center fs-4">
+                        <p>Prosesor terbaru yang hadir dengan performa luar biasa untuk bermain game, multitasking, dan banyak lagi.
+                            Kartu grafis NVIDIA hingga GeForce RTX™ 3070 GPU menghadirkan kecepatan frame yang mulus. Prosesor hingga AMD Ryzen™
+                            9 5900HX CPU yang dapat di-overclock memberi daya melalui pengangkatan yang berat. Dipersenjatai dengan RAM DDR4-3200
+                            berkinerja tinggi hingga 16 GB, Anda dapat bermain game, streaming, dan berpindah aplikasi dengan mulus.
+                            Penyimpanan NVMe SSD hingga 1TB mempercepat waktu muat untuk game dan aplikasi, dan slot M.2 kedua memungkinkan Anda
+                            menambahkan drive lain untuk memperluas penyimpanan Anda.</p>
+                    </div>
+            
+                    <div class="window-box">
+                        <h2 id="window-text">Windows 10 Home</h2>
+                        <div id="os-text" class="text-center fs-4">OS</div>
+                    </div>
+            
                 </div>
             </div>
+
+            <div id="audio">
+                <div class="frame d-flex flex-column align-items-center justify-content-center pt-4">
+                    <div class="title">
+                        <h3 class="inner-title px-3 pt-2">AUDIO</h3>
+                    </div>
+            
+                    <div>
+                        <h2 class="brief-text mb-4 p-3 fst-italic text-center">IMMERSE IN CRYSTAL CLEAR SOUND</h2>
+                    </div>
+            
+                    <div class="full-description w-50 text-center fs-4">
+                        <p>Speaker Twin Smart Amp * mengeluarkan suara langsung ke arah Anda untuk memaksimalkan kejernihan. Gunakan
+                            headphone untuk menikmati suara surround 5.1 virtual channel yang didukung oleh Dolby Atmos. AI Noise-Cancelation
+                            dua arah menghilangkan kebisingan yang tidak diinginkan dari audio masuk dan keluar, membuat obrolan tim,
+                            streaming, dan komunikasi Anda lebih jernih.</p>
+                    </div>
+            
+                    <div class="m-4">
+                        <font class="small-size">*Smart Amp is available in configurations with NVIDIA® GeForce RTX™ graphics.
+                        </font>
+                    </div>
+
+                    <div class="custom-shape-divider-bottom-1628493447 position-relative">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div id="battery">
+                <div class="frame d-flex flex-column align-items-center justify-content-center p-4">
+                    <div class="title">
+                        <h3 class="inner-title px-3 pt-2">BATTERY</h3>
+                    </div>
+            
+                    <div>
+                        <h2 class="brief-text mb-4 p-3 fst-italic text-center">LIVE LONGER</h2>
+                    </div>
+            
+                    <div class="full-description w-50 text-center fs-4">
+                        <p>Cabut dan lakukan lebih banyak aktifitas saat bepergian dengan baterai berkapasitas tinggi 90Wh.
+                            Perpanjang masa pakai
+                            baterai Anda jauh dari soket yang biasanya dengan pengisian daya Tipe-C dari unit daya yang sudah
+                            kompatibel. Untuk
+                            aktivitas sehari-hari seperti penelusuran web dan streaming video, Anda dapat menggunakan adaptor USB-C
+                            yang lebih kecil
+                            hingga 100W dan bepergian lebih ringan dengan satu pengisi daya untuk laptop dan ponsel Anda.</p>
+                    </div>
+            
+                </div>
+            </div>
+            
+            <div id="more">
+                <div class="frame  d-flex flex-column align-items-center justify-content-center p-4" id="more-frame">
+                    <div class="title">
+                        <h3 class="inner-title px-3 pt-2">MORE INFO</h3>
+                    </div>
+                    <div>
+                        <div class="w-75 text-center my-4 py-3 justify-content-center mx-auto">
+                            <h2>Interested in an ASUS ROG Strix G15 G513 ?</h2>
+                            <h3 id="footer-title">Please fill out this short form so we can provide more information
+                                about ASUS ROG Strix G15 G513</h3>
+                        </div>
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <div class="form-floating mb-3 w-50 mx-auto">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Full Name" required>
+                                <label for="floatingName" class="text-dark">Full Name</label>
+                            </div>
+
+                            <div class="form-floating mb-3 w-50 mx-auto">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                <label for="floatingInput" class="text-dark">Email address</label>
+                            </div>
+                            
+                            <div class="d-flex justify-content-center align-items-center">
+                                <input id="submit" type="submit" value="SUBMIT" class="btn btn-outline-primary justify-content-center"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </main>
-
+    
     <footer>
-        <div id="bottom-text">
+        <div id="bottom-text" class="d-flex justify-content-center align-items-center pt-5">
             <h3>©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED.</h3>
         </div>
     </footer>
-    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
 </body>
 </html>
