@@ -77,6 +77,10 @@ nav a img {border-radius: 50%;}
 
 .navbar-brand, #navbarNav ul li a {color: whitesmoke;}
 #navbarNav ul li a:hover {color: #D44000}
+.nav-link.active, a.nav-link:hover {
+    color:#be3a1c !important;
+    transition: all 0.25s ease-in-out !important;
+}
 .description {font-size: 1.3rem;}
 
 #about {
@@ -178,6 +182,7 @@ span.angle.carousel-control-prev-icon:hover {left: -5px;}
 #inner-contact {padding: 3rem 0 0;}
 #contact {padding: 20px 0;}
 #contact-title {font-size: 5rem;}
+.fa:hover,.fab:hover {transform: scale(1.5);}
 
 footer {background: linear-gradient(180deg,#5C3030,#402A23);}
 
