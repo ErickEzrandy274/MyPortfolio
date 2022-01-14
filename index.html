@@ -13,16 +13,18 @@
     <script src="https://kit.fontawesome.com/2eebf67ed1.js" crossorigin="anonymous"></script>
     <!-- kode di atas akun font Awesome Erick Ezrandy -->
 </head>
-<body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
-    <header>
-        <div id="welcome-section">
+<body class="scrollspy-example min-vh-100" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <header class="d-inline w-100"> <!-- navigasi dapat menempel pada seluruh halaman -->
+        <div id="welcome-section" class="vh-100 w-100">
             <h1 class="text1">WELCOME</h1>
             <h1 class="text2">TO MY WEBSITE</h1>
         </div>
 
         <nav id="navbar" class="navbar navbar-expand-md navbar-dark sticky-top">
             <div class="container">
-                <a href="#" class="navbar-brand fs-3"><img src="./image/erick.png" alt="Erick" width="35"> ERICK EZRANDY</a>
+                <a href="#" class="navbar-brand fs-3">
+                    <img src="./image/erick.png" alt="Erick" width="35" id="img-header"> ERICK EZRANDY
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,13 +56,14 @@
         <div class="container-fluid p-0">
             <div id="about">
                 <div id="first-section" class="d-flex flex-column mx-auto w-50 py-4">
-                    <div class="title text-center py-5">
-                        <h1>About Me</h1>
+                    <div class="title text-center about-title">
+                        <h1 class="title-h1">About Me</h1>
                     </div>
-                    <img class="image img-fluid w-50 d-block mx-auto rounded-circle" src="./image/erick2.png" alt="Foto Erick">
-                    <div id="first-section-text" class="w-75 mx-auto py-3 p-lg-3 text-center fw-bold description">
-                        <p clas>Perkenalkan nama saya Erick Ezrandy, mahasiswa Fakultas Ilmu Komputer UI 2020 sekaligus seorang Web Developer 
-                            yang berfokus dalam membuat tampilan website yang modern dan responsive
+                    <img class="image images img-fluid d-block mx-auto rounded-circle" src="./image/erick2.png" alt="Foto Erick">
+                    <div id="first-section-text" class="mx-auto py-3 p-lg-3 text-center fw-bold description">
+                        <p clas>Perkenalkan nama saya Erick Ezrandy, mahasiswa Fakultas Ilmu Komputer UI 2020 sekaligus seorang
+                            Front-End Web Developer yang berfokus dalam membuat tampilan website yang modern, responsive,
+                            dan interaktif
                         </p>
                     </div>
                 </div>
@@ -69,21 +72,119 @@
                     <div class="second-section-content mx-auto py-lg-0 py-3">
                         <!-- src="https://image.flaticon.com/icons/svg/201/201603.svg -->
                         <img class="image img-fluid d-block mx-auto rounded-circle" src="./image/graduation.png" 
-                        alt="Graduation"">
-                        <div class="w-50 mx-auto py-3 p-lg-3 text-center fw-bold description">
+                        alt="Graduation">
+                        <div id="second-section-text" class="mx-auto py-3 p-lg-3 text-center fw-bold description">
                             <p>Saya telah mengikuti beberapa kelas khusus Front-End Developer yang bertugas membuat tampilan web responsive 
                                 dan telah mempunyai beberapa sertifikat
                             </p>
                         </div>
                     </div>
                 
-                    <div class=" second-section-content mx-auto">
-                        <img class="image img-fluid w-25 d-block mx-auto rounded-3" 
-                            src="https://www.pngkey.com/png/detail/80-803470_vector-javascript-html5-css3-transparent-html-css-js.png"
-                            alt="Logo">
-                        <div class="w-50 mx-auto py-3 p-lg-3 text-center fw-bold description">
-                            <p>Saya telah menguasai cara membuat tampilan website dengan menggunakan HTML, CSS
-                                dan JavaScript. Selain itu, saya juga dapat menggunakan Framework modern seperti Bootstrap dan Tailwind
+                    <div class="second-section-content">
+                        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="absolute top-100 carousel-indicators my-3">
+                                <button 
+                                    type="button" 
+                                    data-bs-target="#carouselCaptions" 
+                                    data-bs-slide-to="0" 
+                                    class="active btn-img" 
+                                    aria-current="true" 
+                                    aria-label="Slide 1">
+                                </button>
+
+                                <button 
+                                    type="button" 
+                                    data-bs-target="#carouselCaptions" 
+                                    data-bs-slide-to="1"
+                                    class="btn-img" 
+                                    aria-label="Slide 2">
+                                </button>
+                                
+                                <button 
+                                    type="button" 
+                                    data-bs-target="#carouselCaptions" 
+                                    data-bs-slide-to="2"
+                                    class="btn-img" 
+                                    aria-label="Slide 3">
+                                </button>
+                                
+                                <button 
+                                    type="button" 
+                                    data-bs-target="#carouselCaptions" 
+                                    data-bs-slide-to="3"
+                                    class="btn-img" 
+                                    aria-label="Slide 4">
+                                </button>
+                                
+                                <button 
+                                    type="button" 
+                                    data-bs-target="#carouselCaptions" 
+                                    data-bs-slide-to="4"
+                                    class="btn-img" 
+                                    aria-label="Slide 5">
+                                </button>
+                                
+                                <button 
+                                    type="button" 
+                                    data-bs-target="#carouselCaptions" 
+                                    data-bs-slide-to="5"
+                                    class="btn-img" 
+                                    aria-label="Slide 6">
+                                </button>
+                                
+                            </div>
+        
+                            <div class="carousel-inner inner">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid d-block skills mx-auto" src="./image/html5.png" alt="HTML5">
+                                </div>
+        
+                                <div class="carousel-item">
+                                    <img class="img-fluid d-block skills mx-auto" src="./image/css3.png" alt="CSS3">
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img class="img-fluid d-block skills mx-auto" src="./image/js.png" alt="JS">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="img-fluid d-block skills mx-auto" src="./image/bootstrap.jpg" alt="Bootstrap">
+                                </div>
+        
+                                <div class="carousel-item">
+                                    <img class="img-fluid d-block skills mx-auto" src="./image/tailwind-css.png" alt="Tailwind">
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img class="img-fluid d-block skills mx-auto" src="./image/react.png" alt="ReactJS">
+                                </div>
+                            </div>
+                            
+                            <button 
+                                class="carousel-control-prev btn-control control-left" 
+                                type="button" 
+                                data-bs-target="#carouselCaptions" 
+                                data-bs-slide="prev"
+                            >
+                                <span class="angle carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="angle visually-hidden">Previous</span>
+                            </button>
+        
+                            <button 
+                                class="carousel-control-next btn-control control-right" 
+                                type="button" 
+                                data-bs-target="#carouselCaptions" 
+                                data-bs-slide="next"
+                            >
+                                <span class="angle carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="angle visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="mx-auto py-3 p-lg-3 text-center fw-bold description">
+                            <p>Saya telah menguasai cara membuat tampilan website dengan menggunakan HTML, CSS,
+                                dan JavaScript. Selain itu, saya juga dapat menggunakan Framework modern seperti Bootstrap,
+                                Tailwind, dan ReactJS.
                             </p>
                         </div>
                     </div>
@@ -99,61 +200,107 @@
             </div>
 
             <div id="projects">
-                <div class="title text-center py-5">
-                    <h1>My Project</h1>
+                <div class="title text-center">
+                    <h1 class="title-h1">My Project</h1>
                 </div>
 
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselCaptions2" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button 
+                            type="button" 
+                            data-bs-target="#carouselCaptions2" 
+                            data-bs-slide-to="0" 
+                            class="btn-img btn-img2 active" 
+                            aria-current="true" 
+                            aria-label="Slide 1"> 
+                        </button>
+                        
+                        <button 
+                            type="button" 
+                            data-bs-target="#carouselCaptions2" 
+                            data-bs-slide-to="1" 
+                            aria-label="Slide 2"
+                            class="btn-img btn-img2 ">
+                        </button>
+                        
+                        <button 
+                            type="button" 
+                            data-bs-target="#carouselCaptions2" 
+                            data-bs-slide-to="2" 
+                            aria-label="Slide 3"
+                            class="btn-img btn-img2 ">
+                        </button>
                     </div>
 
-                    <div class="carousel-inner">
+                    <div class="carousel-inner w-75 mx-auto">
                         <div class="carousel-item active">
-                            <img class="img-fluid d-block w-75 mx-auto rounded-pill" src="./image/Project I.png" alt="Project 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="fw-bolder project-tile">SURVEY FORM</h2>
-                                <h5 class="fw-bolder project-tile">FreeCodeCamp Task</h5>
-                                <button type="button" class="btn btn-primary">
-                                    <a href="./project/project 1/index.html" target="_blank" class="text-decoration-none fw-bold project-button">LOOK
-                                       </a>
-                            </button>
+                            <img class="img-fluid d-block projects mx-auto" src="./image/Project I.png" alt="Project 1">
+                            <h2 class="fw-bolder project-tile">SURVEY FORM</h2>
+                            <h5 class="fw-bolder project-tile tile-2">FreeCodeCamp Task</h5>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn btn-primary btn-project-tile border-2">
+                                    <a 
+                                        href="./project/project 1/index.html" 
+                                        target="_blank" 
+                                        class="text-decoration-none fw-bold project-button"
+                                    >
+                                        LOOK
+                                    </a>
+                                </button>
                             </div>
                         </div>
 
                         <div class="carousel-item">
-                            <img class="img-fluid d-block w-75 mx-auto rounded-pill" src="./image/Project II.png" alt="Project 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="fw-bolder project-tile">TRIBUTE LANDING PAGE</h2>
-                                <h5 class="fw-bolder project-tile">FreeCodeCamp Task</h5>
-                                <button type="button" class="btn btn-primary">
-                                    <a href="./project/project 2/company.html" target="_blank" class="text-decoration-none fw-bold project-button">LOOK
+                            <img class="img-fluid d-block projects mx-auto" src="./image/Project II.png" alt="Project 2">
+                            <h2 class="fw-bolder project-tile">TRIBUTE LANDING PAGE</h2>
+                            <h5 class="fw-bolder project-tile tile-2">FreeCodeCamp Task</h5>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn btn-primary btn-project-tile">
+                                    <a 
+                                        href="./project/project 2/company.html" 
+                                        target="_blank" 
+                                        class="text-decoration-none fw-bold project-button"
+                                    >
+                                        LOOK
                                     </a>
-                            </button>
+                                </button>
                             </div>
                         </div>
                         
                         <div class="carousel-item">
-                            <img class="img-fluid d-block w-75 mx-auto rounded-pill" src="./image/Project III.png" alt="Project 3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="fw-bolder project-tile">BOOKSHELF APPS</h2>
-                                <h5 class="fw-bolder project-tile">Dicoding Task</h5>
-                                <button type="button" class="btn btn-primary">
-                                    <a href="./project/project 3/index.html" target="_blank" class="text-decoration-none fw-bold project-button">LOOK
+                            <img class="img-fluid d-block projects mx-auto" src="./image/Project III.png" alt="Project 3">
+                            <h2 class="fw-bolder project-tile">BOOKSHELF APPS</h2>
+                            <h5 class="fw-bolder project-tile tile-2">Dicoding Task</h5>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn btn-primary btn-project-tile">
+                                    <a 
+                                        href="./project/project 3/index.html" 
+                                        target="_blank" 
+                                        class="text-decoration-none fw-bold project-button"
+                                    >
+                                        LOOK
                                     </a>
-                            </button>
+                                </button>
                             </div>
                         </div>
                     </div>
                     
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <button 
+                        class="carousel-control-prev btn-control control-left-2" 
+                        type="button" 
+                        data-bs-target="#carouselCaptions2" 
+                        data-bs-slide="prev"
+                    >
                         <span class="angle carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="angle visually-hidden">Previous</span>
                     </button>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <button 
+                        class="carousel-control-next btn-control control-right-2" 
+                        type="button" 
+                        data-bs-target="#carouselCaptions2" 
+                        data-bs-slide="next"
+                    >
                         <span class="angle carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="angle visually-hidden">Next</span>
                     </button>
@@ -168,26 +315,26 @@
                 </div>
 
                 <div id="contact" class="title text-center">
-                    <h1 id="inner-contact">Contact</h1>
+                    <h1 id="inner-contact" class="title-h1">Contact</h1>
                     <h1 id="contact-title">Let's work together...</h1>
-                    <h4>How do you take your coffee?</h4>
+                    <h3>How do you take your coffee?</h3>
                 </div>
 
                 <div class="contact-links d-flex flex-column flex-sm-row justify-content-center">
                     <a href="https://www.linkedin.com/in/erick-ezrandy-4384151b7/" target="_blank" class="btn contact-details">
-                        <i class="fa fa-linkedin fa-2x"></i><h4 class="text"> Linkedin</h4>
+                        <i class="fa fa-linkedin fa-3x"></i><h4 class="text"> Linkedin</h4>
                     </a>
 
                     <a href="https://instagram.com/erick_ezrandy?igshid=7ysait3w2193" target="_blank" class="btn contact-details">
-                        <i class="fab fa-instagram fa-2x"></i><h4 class="text"> Instagram</h4>
+                        <i class="fab fa-instagram fa-3x"></i><h4 class="text"> Instagram</h4>
                     </a>
 
                     <a id="profile-link" href="https://github.com/ErickEzrandy274" target="_blank" class="btn contact-details">
-                        <i class="fab fa-github fa-2x"></i><h4 class="text"> GitHub</h4>
+                        <i class="fab fa-github fa-3x"></i><h4 class="text"> GitHub</h4>
                     </a>
 
                     <a href="mailto:erickezrandy1@gmail.com" class="btn contact-details">
-                        <i class="fa fa-at fa-2x"></i><h4 class="text"> E-mail</h4>
+                        <i class="fa fa-at fa-3x"></i><h4 class="text"> E-mail</h4>
                     </a>
                 </div>
             
