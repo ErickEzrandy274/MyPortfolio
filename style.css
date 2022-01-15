@@ -270,6 +270,7 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+.arterisk {color: red; font-weight: bolder; font-size: 1.25rem;}
 .text-semibold { font-weight: 600; font-size: larger; }
 .accordion-item, .accordion-button { border-radius: 20px !important; }
 .accordion-item { 
@@ -284,6 +285,11 @@ footer {
     width: 1.75rem !important;
     border-radius: 50%;
     box-shadow: 0 0 7.5px 5px #000;
+}
+
+.accordion-body {
+    margin: 0 1.25rem !important;
+    padding: 2rem !important;
 }
 
 .description-accordion { margin: .5rem 1rem; }
@@ -369,7 +375,10 @@ footer {
     }
 }
 
-@media (max-width: 654px) { .custom-img {width: 5rem;} }
+@media (max-width: 654px) { 
+    .custom-img {width: 5rem;} 
+    .accordion-body { padding: 1.25rem !important; }
+}
 
 @media (max-width: 576px) {
     #welcome-section h1 {
@@ -471,7 +480,9 @@ footer {
         flex-direction: column; 
         text-align: center;
     }
+
     .accordion-button { height: 10rem; }
+    .accordion-body { padding: 1rem .75rem !important; }
     .description-accordion { margin: .5rem 0 0 !important; }
     .custom-mentor { transform: scale(1.35); }
     .wrapper-title-accordion { width: 90%; }
