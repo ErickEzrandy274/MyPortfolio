@@ -451,6 +451,7 @@ footer {
     }
 
     #projects { padding: 8rem 0; }
+    #experience { padding: 8rem 0 0; }
     .about-title { padding: 7rem 0 2rem ; }
     #contact { padding: 5rem 0 2rem; }
 
@@ -469,12 +470,12 @@ footer {
         flex-direction: column; 
         text-align: center;
     }
-    .accordion-button { height: 12.5rem; }
-    .description-accordion { margin: .5rem 0; }
+    .accordion-button { height: 10rem; }
+    .description-accordion { margin: .5rem 0 0 !important; }
     .custom-mentor { transform: scale(1.35); }
-    .mentor { width: 90%; }
+    .wrapper-title-accordion { width: 90%; }
 }
 
-@media (max-width: 300px) {
-    .description-accordion { margin: .5rem 0 !important; }
+@media (max-width: 320px) {
+    .accordion-button { height: 11rem; }
 }
