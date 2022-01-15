@@ -453,7 +453,6 @@ footer {
     #projects { padding: 8rem 0; }
     #experience { padding: 8rem 0 0; }
     .about-title { padding: 7rem 0 2rem ; }
-    #contact { padding: 5rem 0 2rem; }
 
     #contact-title {
         font-size: 2.5rem;
@@ -463,7 +462,7 @@ footer {
     #contact-title ~ h3 { font-size: 1.5rem; }
     #contact {
         margin: 0 1rem;
-        padding: 1rem;
+        padding: 5rem 0 2rem;
     }
 
     .wrapper-accordion-title { 
