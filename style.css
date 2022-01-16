@@ -270,7 +270,7 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.arterisk {color: red; font-weight: bolder; font-size: 1.25rem;}
+.arterisk {color: red; font-weight: bolder; font-size: 1.25rem; bottom: -1rem; }
 .text-semibold { font-weight: 600; font-size: larger; }
 .accordion-item, .accordion-button { border-radius: 20px !important; }
 .accordion-item { 
