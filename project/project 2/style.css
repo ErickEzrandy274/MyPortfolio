@@ -43,7 +43,7 @@ nav, #review {background-color: black;}
 #battery {background: linear-gradient(180deg,#BBE1FA,#3282B8,#0F4C75,#1B262C, black);}
 .custom-shape-divider-bottom-1628493447 {
     position: absolute;
-    bottom: 0;
+    bottom: -.1rem;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -62,9 +62,28 @@ nav, #review {background-color: black;}
 .custom-shape-divider-bottom-1628493447 .shape-fill {
     fill: #BBE1FA;
 }
+
 #more,footer {background: black;}
 #bottom-text {color: whitesmoke;}
 
 @media (max-width: 992px) {
     .navbar-brand, .video {width: 50%;}
+    .full-description { width: 60% !important; }
+    .inner-more { width: 85% !important; }
+}
+
+@media (max-width: 768px) { 
+    .video {width: 70%; margin: 1.25rem auto; }
+}
+
+@media screen and (max-width: 576px) {
+    .full-description{ width: 75% !important; }
+    .inner-more { width: 95% !important; }
+    .video {width: 80%; margin: .75rem auto; }
+}
+
+@media screen and (max-width: 400px) {
+    .full-description { width: 85% !important; }
+    .inner-more { width: 105% !important; }
+    .video {width: 85%; margin: .75rem 1rem; }
 }
