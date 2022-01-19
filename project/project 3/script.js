@@ -115,6 +115,8 @@ function searchingBook() {
             bookItem.removeAttribute("hidden");
         }
     }
+
+    document.getElementById("searchBookTitle").value = "";
 }
 
 const menuToggle = document.querySelector(".menu-toggle input");

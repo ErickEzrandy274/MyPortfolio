@@ -38,6 +38,11 @@ function addBook() {
             updateDataToStorage();
         
     } 
+    
+    document.getElementById("inputBookTitle").value = "";
+    document.getElementById("inputBookAuthor").value = "";
+    document.getElementById("inputBookYear").value = "";
+
 }
 
 function moveToCompleted(book) {

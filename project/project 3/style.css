@@ -8,6 +8,7 @@
 body {
     background: url(bookshelf.jpg) no-repeat center center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 body, input, button {
@@ -278,9 +279,7 @@ input:placeholder-shown {
         padding: 0 10px;
     }
 
-    nav ul li {
-        padding: 16px 12px;
-    }
+    nav ul li { padding: 16px 12px; }
     
     nav ul li:hover {
         background-color: #be3a1c;
@@ -292,21 +291,11 @@ input:placeholder-shown {
         text-decoration: none;
     }
 
-    nav ul li a:hover {
-        color: whitesmoke;
-    }
-
-    body {
-        height: auto;
-    }
-
-    .flex-row {
-        flex-direction: column;
-    }
-
-    .book_shelf {
-        margin: 0 0 20px;
-    }
+    nav ul li a:hover { color: whitesmoke; }
+    body { height: auto; }
+    .flex-row { flex-direction: column; }
+    .book_shelf { margin: 0 0 20px; }
+    .input_section {  margin-top: 3rem;}
 }
 
 @media screen and (max-width: 800px){
@@ -398,13 +387,9 @@ input:placeholder-shown {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .search_section > form {
-        grid-template-columns: none;
-    }
-
-    #searchSubmit, #searchBookTitle {
-        height: 45px;
-    }
-    
+@media screen and (max-width: 576px) {
+    .search_section > form { grid-template-columns: none; }
+    #searchSubmit, #searchBookTitle { height: 45px; }
+    #searchBookTitle {width: 100%;}
+    #header-title {font-size: 1.35rem;}
 }
