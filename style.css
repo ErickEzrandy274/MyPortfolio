@@ -271,6 +271,8 @@ footer {
 }
 
 .arterisk {color: red; font-weight: bolder; font-size: 1.25rem; bottom: -1rem; }
+.figureBetis {color: whitesmoke !important;}
+/* figure {width: 50% !important;} */
 .text-semibold { font-weight: 600; font-size: larger; }
 .accordion-item, .accordion-button { border-radius: 20px !important; }
 .accordion-item { 
